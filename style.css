@@ -58,6 +58,10 @@ header a {
     transition: all 0.25s;
 }
 
+.dropdown {
+    cursor: pointer;
+}
+
 .dropdown-content li {
     display: block;
     margin: 10px 2px;
@@ -88,10 +92,11 @@ header a {
 .main-container {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 90%;
+    max-width: 1600px;
+    gap: 2em;
     height: 700px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px auto;
 }
 
 /* main content text */
@@ -100,7 +105,6 @@ header a {
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-right: 20px;
 }
 
 .main-container-text-main {
@@ -156,18 +160,15 @@ header a {
 
 .main-container-image img {
     min-width: 300px;
-
     height: 100%;
 }
 
 .clients-container {
-    max-width: 100%;
+    display: flex;
     justify-content: space-between;
-}
-
-.clients-container > img {
-    margin-right: 10px;
-    margin-left: 10px;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
 }
 
 .hero-mobile {
@@ -176,10 +177,14 @@ header a {
 
 .menu-mobile-btn {
     display: none;
+    padding: 0.5em;
+    cursor: pointer;
 }
 
 .closemenu-btn {
     display: none;
+    padding: 0.5em;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:1420px) {
@@ -204,10 +209,6 @@ header a {
 
     .main-container-image img {
         max-width: 100%;
-    }
-
-    .clients-container img {
-        max-width: 18%;
     }
 
 }
@@ -294,7 +295,6 @@ header a {
         flex-direction: column;
         padding: 0;
         margin-top: 0;
-        width: 100%;
     }
     
     .main-container-image {
@@ -334,11 +334,11 @@ header a {
         text-align: center;
     }
     
-    .main-container-text .clients-container {
+    /* .main-container-text .clients-container {
         max-width: 100%;
         margin: auto;
         margin-bottom: 100px;
-    }
+    } */
 
     .main-container-text .clients-container > img {
         max-width: 75px;
